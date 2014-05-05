@@ -1,0 +1,72 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<html> 
+<head> 
+<title>Записки в храм</title> 
+<meta http-equiv="Content-Language" content="ru"> 
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"> 
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<script type="text/javascript" src="js/main.js"></script>
+</head> 
+
+<body bgcolor="gray" onload="load()"> 
+	<div style="position:absolute;top:0px;left:0px;width:1000px;height:1430px;">
+		<img id="paper" src="note.png" width="1000px" height="1430px" />
+	</div>
+	<div style="position:absolute;top:200px;left:80px;width:400px;height:450px;">
+		
+		<div class="Names" id="o000"></div>
+		<div class="Names" id="o001"></div>
+		<div class="Names" id="o002"></div>
+		<div class="Names" id="o003"></div>
+		<div class="Names" id="o004"></div>
+		<div class="Names" id="o005"></div>
+		<div class="Names" id="o006"></div>
+		<div class="Names" id="o007"></div>
+		<div class="Names" id="o008"></div>
+		<div class="Names" id="o009"></div>
+	</div> 
+ 
+	<div style="position:absolute;top:200px;left:590px;width:400px;height:450px;"> 
+		
+		<div class="Names" id="o100"></div>
+		<div class="Names" id="o101"></div>
+		<div class="Names" id="o102"></div>
+		<div class="Names" id="o103"></div>
+		<div class="Names" id="o104"></div>
+		<div class="Names" id="o105"></div>
+		<div class="Names" id="o106"></div>
+		<div class="Names" id="o107"></div>
+		<div class="Names" id="o108"></div>
+		<div class="Names" id="o109"></div>
+	</div> 
+ 
+	<div style="position:absolute;top:980px;left:70px;width:400px;height:450px;"> 
+		
+		<div class="Names" id="o010"></div>
+		<div class="Names" id="o011"></div>
+		<div class="Names" id="o012"></div>
+		<div class="Names" id="o013"></div>
+		<div class="Names" id="o014"></div>
+		<div class="Names" id="o015"></div>
+		<div class="Names" id="o016"></div>
+		<div class="Names" id="o017"></div>
+		<div class="Names" id="o018"></div>
+		<div class="Names" id="o019"></div>
+	</div> 
+ 
+	<div style="position:absolute;top:980px;left:580px;width:400px;height:450px;"> 
+		
+		<div class="Names" id="o110"></div>
+		<div class="Names" id="o111"></div>
+		<div class="Names" id="o112"></div>
+		<div class="Names" id="o113"></div>
+		<div class="Names" id="o114"></div>
+		<div class="Names" id="o115"></div>
+		<div class="Names" id="o116"></div>
+		<div class="Names" id="o117"></div>
+		<div class="Names" id="o118"></div>
+		<div class="Names" id="o119"></div>
+	</div> 
+</body> 
+</html>	

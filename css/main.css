@@ -1,0 +1,33 @@
+.text_o0 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 16px;
+	font-style: italic;
+	text-indent: 25px;
+	text-align: justify;
+	color: #ff0000;
+}
+.text_o1 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 16px;
+	font-style: italic;
+	text-indent: 25px;
+	text-align: justify;
+	color: #000000;
+}
+.text_com {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 12px;
+	font-style: italic;
+	text-indent: 25px;
+	text-align: justify;
+	color: #000006;
+}
+.Names {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #000000;
+	text-align: left;
+	font-weight: bold;
+	font-style: italic;
+	padding-top:15px;
+}
