@@ -1,5 +1,4 @@
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
-<html> 
+﻿<html> 
 <head> 
 <title>Записки в храм</title> 
 <meta http-equiv="Content-Language" content="ru"> 
@@ -9,12 +8,12 @@
 <link rel="stylesheet" type="text/css" href="css/main.css" />
 <script type="text/javascript" src="js/main.js"></script>
 </head> 
-<body  bgcolor="gray" onload="main()"> 
+<body  bgcolor="gray" onload="bg_memos_main()"> 
 	<div style="position:absolute;top:10px;left:0px;width:1000px;height:20px;" align="right"> 
-		<input onClick="saveNames();" type="button" value="Сохранить"> 
-		<input onClick="duplicateDown();" type="button" value="Дублировать"> 
-		<input onClick="clearNames();" type="button" value="Очистить"> 
-		<input onClick="printTab();" type="button" value="Печатать..."> 
+		<input onClick="bg_memos_saveNames();" type="button" value="Сохранить"> 
+		<input onClick="bg_memos_duplicateDown();" type="button" value="Дублировать"> 
+		<input onClick="bg_memos_clearNames();" type="button" value="Очистить"> 
+		<input onClick="bg_memos_printTab();" type="button" value="Печатать..."> 
 	</div> 
 	<div style="position:absolute;top:40px;left:0px;width:1000px;height:1480px;"> 
 		<img id="paper" src="note.png" width="1000px" height="1430px" />
@@ -75,10 +74,10 @@
 		<div style="padding-top:15px;"><input id="o119" name="o119" type="text" size="27" maxlength="27" style="width:85%;"></div>
 	</div> 
 	<div style="position:absolute;top:1480px;left:0px;width:1000px;height:40px;" align="right"> 
-		<input onClick="saveNames();" type="button" value="Сохранить"> 
-		<input onClick="duplicateUp();" type="button" value="Дублировать"> 
-		<input onClick="clearNames();" type="button" value="Очистить"> 
-		<input onClick="printTab();" type="button" value="Печатать..."> 
+		<input onClick="bg_memos_saveNames();" type="button" value="Сохранить"> 
+		<input onClick="bg_memos_duplicateUp();" type="button" value="Дублировать"> 
+		<input onClick="bg_memos_clearNames();" type="button" value="Очистить"> 
+		<input onClick="bg_memos_printTab();" type="button" value="Печатать..."> 
 	</div> 
 </body> 
 </html>	

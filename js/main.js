@@ -1,10 +1,15 @@
 ﻿// Вывести на экран страницу с печатной формой
-function printTab() {
-	saveNames();
-	window.open("paper.php","_self");
+function bg_memos_printTab() {
+	setTimeout(bg_memos_popup_printTab, 1000);
 }
+function bg_memos_popup_printTab() {
+	bg_memos_saveNames();
+	window.open("paper.html","_self");
+}
+
+
 // Загрузка данных в локальное хранилище учетной записи
-function saveNames() {
+function bg_memos_saveNames() {
 	for (var j=0; j<2; j++) {
 		for (var i=0; i<20; i++) {
 			var pos = "o"+j+((i<10)?("0"+i):i);
@@ -13,7 +18,7 @@ function saveNames() {
 	}
 }
 // Дублировать данные из верхней части формы в нижнюю
-function duplicateDown() {
+function bg_memos_duplicateDown() {
 	var k;
 	for (var j=0; j<2; j++) {
 		for (var i=0; i<10; i++) {
@@ -27,7 +32,7 @@ function duplicateDown() {
 	}
 }
 // Дублировать данные из нижней части формы в верхнюю
-function duplicateUp() {
+function bg_memos_duplicateUp() {
 	var k;
 	for (var j=0; j<2; j++) {
 		for (var i=10; i<20; i++) {
@@ -41,7 +46,7 @@ function duplicateUp() {
 	}
 }
 // Очистить форму и локальное хранилище учетной записи
-function clearNames() {
+function bg_memos_clearNames() {
 	for (var j=0; j<2; j++) {
 		for (var i=0; i<20; i++) {
 			var pos = "o"+j+((i<10)?("0"+i):i);
@@ -51,8 +56,8 @@ function clearNames() {
 	}
 }
 // Загрузка данных из локального хранилища учетной записи
-// в форму ввода
-function main() {
+//  - в форму ввода
+function bg_memos_main() {
 
 	for (var j=0; j<2; j++) {
 		for (var i=0; i<20; i++) {
@@ -64,8 +69,8 @@ function main() {
 		}
 	}
 }
-// в печатную форму
-function load() {
+// - в печатную форму
+function bg_memos_load() {
 	for (var j=0; j<2; j++) {
 		for (var i=0; i<20; i++) {
 			var pos = "o"+j+((i<10)?("0"+i):i);
@@ -75,6 +80,5 @@ function load() {
 		}
 	}
 	window.print();
-	window.close();
 }
 

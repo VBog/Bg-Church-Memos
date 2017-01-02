@@ -4,7 +4,7 @@
     Plugin URI: http://bogaiskov.ru/plugin-church-memos/
     Description: Плагин позволяет создавать, хранить и распечатывать записки в православный храм «О Здравии» и «О Упокоении» непосредственно на Вашем сайте.
     Author: Vadim Bogaiskov
-    Version: 1.0
+    Version: 1.1
     Author URI: http://bogaiskov.ru 
 	Text Domain: bg_memos
 */
@@ -36,14 +36,14 @@ if ( !defined('ABSPATH') ) {
 	die( 'Sorry, you are not allowed to access this page directly.' ); 
 }
 
-define('BG_MEMOS_VERSION', '1.0');
+define('BG_MEMOS_VERSION', '1.1');
 
 function bg_memos_js_options () { ?>
 	<script>
 		function memos_button() {
 			var x = screen.width/2 - 1020/2;
 			var y = screen.height/2 - (750+60)/2;
-			window.open("<?php echo plugins_url( '/' , __FILE__ );?>"+"notes.php","_blank", "scrollbars=1,width=1020,height=750,left="+x+",top="+y );
+			window.open("<?php echo plugins_url( '/' , __FILE__ );?>"+"notes.html","_blank", "scrollbars=1,width=1020,height=750,left="+x+",top="+y );
 		}
 	</script>
 <?php
@@ -52,21 +52,21 @@ if ( !is_admin() ) {
 	add_action( 'wp_head' , 'bg_memos_js_options' ); 
 }
 
+/*****************************************************************************************
+	Функции запуска плагина
+	
+******************************************************************************************/
 if ( defined('ABSPATH') && defined('WPINC') ) {
 // Регистрируем шорт-код memos
 	add_shortcode( 'memos_button', 'bg_memos_button' );
 }
 	
-/*****************************************************************************************
-	Функции запуска плагина
-	
-******************************************************************************************/
-// Функция обработки шорт-кода ortcal_button
+// Функция обработки шорт-кода memos_button
 function bg_memos_button($atts) {
 	extract( shortcode_atts( array(
-		'val' => ' * Записки в храм '
+		'val' => 'Записки в храм'
 	), $atts ) );
 
-	$quote = "<button onClick='memos_button();'>".$val."</button>";
+	$quote = "<button class='memos_button' onClick='memos_button();'>".$val."</button>";
 	return "{$quote}";
 }
